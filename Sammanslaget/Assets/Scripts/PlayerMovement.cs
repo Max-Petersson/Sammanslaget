@@ -29,30 +29,35 @@ public class PlayerMovement : MonoBehaviour
     
     void GetInput()
     {
+        #region Movement
         vertical = Input.GetAxisRaw("Vertical");
         if (vertical != 0 && horizontal == 0)
         {
             transform.position += new Vector3(0, vertical) * speed * Time.deltaTime;
-            //move up or down
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
         if (horizontal != 0 && vertical == 0)
         {
             transform.position += new Vector3(horizontal, 0) * speed * Time.deltaTime;
-            //move left right
         }
+        #endregion
 
         if (Input.GetButtonDown("Jump") && interactableObject != null && state == MovementState.notInteracting)
         {
-            state= MovementState.interacting;
+            state = MovementState.interacting;
             interactableObject.Interact(this);
         }
-        else if(Input.GetButtonDown("Jump") && state == MovementState.interacting)
+        else if(Input.GetButtonDown("Jump") && state == MovementState.interacting && interactableObject != null)
         {
-            interactableObject.Interact(this);
+                interactableObject.Interact(this);
         }
-
+        else if(Input.GetButtonDown("Jump") && pickUp != null)
+        {
+            pickUp.gameObject.transform.parent = null;
+            pickUp = null;
+            state = MovementState.notInteracting;
+        }
     }
    
     private void OnTriggerEnter2D(Collider2D collision)
