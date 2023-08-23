@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour, IInteractable
 {
-    public static event Action <WhatAmI> Message; 
+    public static event Action <WhatAmI, GameObject> Message; 
     public enum WhatAmI {bold, red }
     public WhatAmI myType;
     public void Interact(PlayerMovement player)
@@ -19,8 +19,8 @@ public class PickUp : MonoBehaviour, IInteractable
         player.state= PlayerMovement.InteractionState.holding;
         player.pickUp = this;
     }
-    public void ChangeText()
+    public void ChangeText(GameObject targetText)
     {
-        Message.Invoke(myType);
+        Message.Invoke(myType,targetText);
     }
 }

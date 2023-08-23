@@ -43,11 +43,7 @@ public class PlayerMovement : MonoBehaviour
         }
         #endregion
 
-        if (Input.GetButtonDown("Jump") && interactableObject != null && state == InteractionState.notInteracting)
-        {
-            interactableObject.Interact(this);
-        }
-        else if(Input.GetButtonDown("Jump") && state == InteractionState.holding && interactableObject != null)
+        if (Input.GetButtonDown("Jump") && interactableObject != null)
         {
             interactableObject.Interact(this);
         }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class QuestionSlot : MonoBehaviour, IInteractable
 {
-    [SerializeField]GameObject codeBlock;
+    [SerializeField] GameObject codeBlock;
+    [SerializeField] GameObject targetedText;
     public void Interact(PlayerMovement player)
     {
         if (codeBlock != null && player.state == PlayerMovement.InteractionState.holding) // if you are holding and there is something in the slot then return
@@ -15,7 +16,8 @@ public class QuestionSlot : MonoBehaviour, IInteractable
             GameObject currentlyInSlot = player.pickUp.gameObject;
             currentlyInSlot.transform.SetParent(transform.GetChild(0), false);
             currentlyInSlot.transform.localPosition = Vector3.zero;
-            currentlyInSlot.GetComponent<PickUp>().ChangeText();
+
+            currentlyInSlot.GetComponent<PickUp>().ChangeText(targetedText); // which text should be changed
             codeBlock = currentlyInSlot;
            
             player.pickUp.GetComponent<BoxCollider2D>().enabled = false; // turn of the picked up blocks colider
