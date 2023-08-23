@@ -31,7 +31,7 @@ public class TextChange : MonoBehaviour
             tmPro.color = Color.red;
         }
     }
-    private void ResetText()
+    void ResetText()
     {
         tmPro.fontStyle = FontStyles.Normal;
         tmPro.color = Color.black;
