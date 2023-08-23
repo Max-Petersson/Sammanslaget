@@ -6,59 +6,70 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     float vertical;
     float horizontal;
     public PickUp pickUp;
+    private bool latestInputHorizontal;
+    private bool inputFromAxes;
 
     float speed = 5;
     public IInteractable interactableObject;
     public enum InteractionState { notInteracting, interacting, holding }
     public InteractionState state = InteractionState.notInteracting;
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
     {
-        GetInput();
+        MovePlayer();
+        Pickup();
     }
-    
-    void GetInput()
+
+    void MovePlayer()
     {
-        #region Movement
+        inputFromAxes = IsThereAxesInput();
+        
+        if (!inputFromAxes)
+        {
+            return;
+        }
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        {
+            latestInputHorizontal = false;
+        }
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            latestInputHorizontal = true;
+        }
+
         vertical = Input.GetAxisRaw("Vertical");
-        if (vertical != 0 && horizontal == 0)
+        horizontal = Input.GetAxisRaw("Horizontal");
+        
+        if (!latestInputHorizontal)
         {
             transform.position += new Vector3(0, vertical) * speed * Time.deltaTime;
         }
-
-        horizontal = Input.GetAxisRaw("Horizontal");
-        if (horizontal != 0 && vertical == 0)
+        if (latestInputHorizontal)
         {
             transform.position += new Vector3(horizontal, 0) * speed * Time.deltaTime;
         }
-        #endregion
-
-        if (Input.GetButtonDown("Jump") && interactableObject != null && state == InteractionState.notInteracting)
+    }
+    
+    void Pickup()
+    {
+        if (Input.GetButtonDown("Jump") && interactableObject != null)
         {
             interactableObject.Interact(this);
         }
-        else if(Input.GetButtonDown("Jump") && state == InteractionState.holding && interactableObject != null)
-        {
-            interactableObject.Interact(this);
-        }
-        else if(Input.GetButtonDown("Jump") && pickUp != null)
+        else if (Input.GetButtonDown("Jump") && pickUp != null)
         {
             pickUp.gameObject.transform.parent = null;
             pickUp = null;
-            state = InteractionState.notInteracting;
+            state = PlayerMovement.InteractionState.notInteracting;
         }
     }
-   
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<IInteractable>() != null)
@@ -73,5 +84,17 @@ public class PlayerMovement : MonoBehaviour
             interactableObject = null;
         }
     }
+
+    private bool IsThereAxesInput()
+    {
+        if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0)
+        {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    
     
 }
