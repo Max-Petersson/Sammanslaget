@@ -18,8 +18,11 @@ public class TextChange : MonoBehaviour
     {
         PickUp.Message -= ExpressChange;
     }
-    void ExpressChange(PickUp.WhatAmI state)
+    void ExpressChange(PickUp.WhatAmI state, GameObject targetedText) //problem, everyone will try this, could encapsulate by sending which question this i asked by
     {
+        if (targetedText != this.gameObject)
+            return;
+
         if(state == PickUp.WhatAmI.bold)
         {
             ResetText();
