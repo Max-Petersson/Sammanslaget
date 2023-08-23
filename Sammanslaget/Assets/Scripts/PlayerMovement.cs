@@ -34,11 +34,11 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
         {
             latestInputHorizontal = false;
         }
-        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
         {
             latestInputHorizontal = true;
         }
@@ -46,13 +46,15 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
         
-        if (!latestInputHorizontal)
+        switch (latestInputHorizontal)
         {
-            transform.position += new Vector3(0, vertical) * speed * Time.deltaTime;
-        }
-        if (latestInputHorizontal)
-        {
-            transform.position += new Vector3(horizontal, 0) * speed * Time.deltaTime;
+            case false:
+                transform.position += new Vector3(0, vertical) * speed * Time.deltaTime;
+                break;
+            
+            case true:
+                transform.position += new Vector3(horizontal, 0) * speed * Time.deltaTime;
+                break;
         }
     }
     
