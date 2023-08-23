@@ -200,7 +200,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -317736177, guid: db7cfb35767157c4687e7e5709749554, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -359,7 +359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -178.47745, y: -0.0005188}
+  m_AnchoredPosition: {x: -71.47742, y: -0.0005188}
   m_SizeDelta: {x: 423.3952, y: 346.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &294878284
@@ -493,7 +493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -179.1, y: -6}
+  m_AnchoredPosition: {x: -72.099976, y: -6}
   m_SizeDelta: {x: 424.4, y: 29.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443839333
@@ -1317,6 +1317,14 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 2743858763535829874, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
+      propertyPath: m_fontSize
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743858763535829874, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 2743858763535829875, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1383,7 +1391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2743858763535829875, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -65
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2743858763535829875, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1668,6 +1676,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question1
       objectReference: {fileID: 0}
+    - target: {fileID: 2743858763535829874, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
+      propertyPath: m_text
+      value: Change Color To Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743858763535829874, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743858763535829874, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2743858763535829875, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1734,7 +1754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2743858763535829875, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -65
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2743858763535829875, guid: 23275a4b614fe32468fa56c28be90028, type: 3}
       propertyPath: m_AnchoredPosition.y
