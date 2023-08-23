@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 52121b0d36500dc48b98a18c8ed228d2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6d5f02b902c2b46ad32a914a12b787
+      internalID: -1419830408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 125
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d66512b56d92549a1a8457933c1545
+      internalID: -1551527016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 125
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f10416e3c7ca98488e6283f3b1c5014
+      internalID: 409949848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 125
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bcda608ea7aca4490738cde9d78aeb
+      internalID: 1219894718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 125
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323e501ec572dfe4687a43dd892d429d
+      internalID: -1626250083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952d6f893d1352b4c956adfd30222ada
+      internalID: -1954735783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 100
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e686ac88ae8d4b94492739ef9b32de68
+      internalID: -1593918143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 100
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5354242e64794504fafcdda510b66361
+      internalID: -1390422571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 100
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad32414e89f2a849b77e2b15d2fc5af
+      internalID: 789175549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 100
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0ba444a05054143a6382188c04fac6
+      internalID: -317736177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886ccc4217cbe9e429dd7082046ac5e8
+      internalID: -477796565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 75
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f4ec98728b05b4e87dbf90cf47994c
+      internalID: 692141249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_12
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 75
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be636a18e4eb154889878d286b8eb7d
+      internalID: 935291820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 75
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e1d7426feb98a40bf2a3324dadec7e
+      internalID: 2032083904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 75
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8c45b1220098742aa9d06fcb190ab4
+      internalID: -75567632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec0fbc2495365c42ab7778e07db3724
+      internalID: 1243625377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 50
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20e968a3869506409d3b18bf7bbec19
+      internalID: 500424899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 50
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc676310836734147acff75b8953dd5c
+      internalID: 578914538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_18
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 50
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaee24360c87ca246a07bf38562cde66
+      internalID: 483652809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 50
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c28a0ec026b506478ab1474be7caf1a
+      internalID: -1482644528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf0049fd5586d94f933d19f81d30e36
+      internalID: 1812327796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_21
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 25
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b5020474a89f042a382058c9f92913
+      internalID: -2115989004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 25
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b373f30195056424fa616799bd0e6f86
+      internalID: -147203562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 25
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d599fc8d5bf76543a4fca63316045d6
+      internalID: 625961425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_24
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 25
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b942b5f7ca4bf124db445598a46b01d1
+      internalID: 2010289704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d618419efd79347b151a6fee12fa74
+      internalID: -1649724375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_26
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdbef4f657cb8a40a7e85ad0ff57e9e
+      internalID: -2070173055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae0f9632de026a429bf70f6e9fd093b
+      internalID: -432883676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_28
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3181a05f7c82f4547a38c0db50b92515
+      internalID: -987728914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sammanslag_spelarchar_01_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 18.2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41321713f11378d49823ef496fbb490c
+      internalID: 928565416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sammanslag_spelarchar_01_22: -147203562
+      sammanslag_spelarchar_01_19: -1482644528
+      sammanslag_spelarchar_01_18: 483652809
+      sammanslag_spelarchar_01_10: -477796565
+      sammanslag_spelarchar_01_17: 578914538
+      sammanslag_spelarchar_01_5: -1954735783
+      sammanslag_spelarchar_01_26: -2070173055
+      sammanslag_spelarchar_01_16: 500424899
+      sammanslag_spelarchar_01_25: -1649724375
+      sammanslag_spelarchar_01_23: 625961425
+      sammanslag_spelarchar_01_3: 1219894718
+      sammanslag_spelarchar_01_0: -1419830408
+      sammanslag_spelarchar_01_12: 935291820
+      sammanslag_spelarchar_01_8: 789175549
+      sammanslag_spelarchar_01_11: 692141249
+      sammanslag_spelarchar_01_24: 2010289704
+      sammanslag_spelarchar_01_20: 1812327796
+      sammanslag_spelarchar_01_29: 928565416
+      sammanslag_spelarchar_01_28: -987728914
+      sammanslag_spelarchar_01_2: 409949848
+      sammanslag_spelarchar_01_1: -1551527016
+      sammanslag_spelarchar_01_9: -317736177
+      sammanslag_spelarchar_01_13: 2032083904
+      sammanslag_spelarchar_01_14: -75567632
+      sammanslag_spelarchar_01_27: -432883676
+      sammanslag_spelarchar_01_15: 1243625377
+      sammanslag_spelarchar_01_4: -1626250083
+      sammanslag_spelarchar_01_7: -1390422571
+      sammanslag_spelarchar_01_21: -2115989004
+      sammanslag_spelarchar_01_6: -1593918143
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
