@@ -14,8 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     float speed = 5;
     public IInteractable interactableObject;
-    public enum MovementState { notInteracting, interacting, holding }
-    public MovementState state = MovementState.notInteracting;
+    public enum InteractionState { notInteracting, interacting, holding }
+    public InteractionState state = InteractionState.notInteracting;
     void Start()
     {
         
@@ -43,11 +43,11 @@ public class PlayerMovement : MonoBehaviour
         }
         #endregion
 
-        if (Input.GetButtonDown("Jump") && interactableObject != null && state == MovementState.notInteracting)
+        if (Input.GetButtonDown("Jump") && interactableObject != null && state == InteractionState.notInteracting)
         {
             interactableObject.Interact(this);
         }
-        else if(Input.GetButtonDown("Jump") && state == MovementState.holding && interactableObject != null)
+        else if(Input.GetButtonDown("Jump") && state == InteractionState.holding && interactableObject != null)
         {
             interactableObject.Interact(this);
         }
@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         {
             pickUp.gameObject.transform.parent = null;
             pickUp = null;
-            state = MovementState.notInteracting;
+            state = InteractionState.notInteracting;
         }
     }
    
