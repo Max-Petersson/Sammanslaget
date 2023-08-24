@@ -5,23 +5,24 @@ using UnityEngine;
 public class AnimationControl : MonoBehaviour
 {
     Animator anim;
-    SpriteRenderer sprite;
+    SpriteRenderer spriteRender;
     PlayerMovement pm;
     enum Direction {Up, Down, Left, Right, Idle}
     Direction myDir = Direction.Down;
-    bool isIdle = true;
-    [SerializeField] private List<Sprite> mySprites; 
+    bool isIdle = false;
+    public List<Sprite> mySprites = new List<Sprite>(); 
 
     void Start()
     {
         anim = GetComponent<Animator>();
         pm = GetComponent<PlayerMovement>();
-        sprite= GetComponent<SpriteRenderer>();
+        spriteRender = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        isIdle = false;
 
         if (pm.dir.y > 0)
         {
@@ -41,14 +42,11 @@ public class AnimationControl : MonoBehaviour
         }
         else
         {
-            
-            anim.Play("New State");
-            IdleSprite();
-            return;
+            isIdle = true;
         }
 
-        
-
+        if (isIdle == true)
+            return;
         switch (myDir)
         {
             case Direction.Up:
@@ -63,34 +61,42 @@ public class AnimationControl : MonoBehaviour
             case Direction.Right:
                 anim.Play("WalkingLeftright");
                 break;
-           
         }
 
         if (myDir == Direction.Left)
         {
-            sprite.flipX = false;
+            spriteRender.flipX = false;
         }
         else
         {
-            sprite.flipX = true;
+            spriteRender.flipX = true;
         }
+    }
+    private void LateUpdate()
+    {
+        if (isIdle == true)
+        {
+            anim.Play("New State");
+            IdleSprite();
+            return;
+        }
+       
     }
     private void IdleSprite()
     {
         switch (myDir)
         {
             case Direction.Up:
-                sprite.sprite = mySprites[3];
+                spriteRender.sprite = mySprites[3];
                 break;
             case Direction.Down:
-                sprite.sprite = mySprites[2];
+                spriteRender.sprite = mySprites[2];
                 break;
             case Direction.Left:
-                sprite.sprite = mySprites[1];
+                spriteRender.sprite = mySprites[1];
                 break;
             case Direction.Right:
-                
-                sprite.sprite = mySprites[1];
+                spriteRender.sprite = mySprites[1];
                 break;
         }
     }
