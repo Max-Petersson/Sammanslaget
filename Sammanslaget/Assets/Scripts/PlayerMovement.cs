@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontal;
     public PickUp pickUp;
     private bool latestInputHorizontal;
+    private bool latestInputVertical;
     private bool inputFromAxes;
 
     float speed = 5;
@@ -17,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     public enum InteractionState { notInteracting, interacting, holding }
     public InteractionState state = InteractionState.notInteracting;
     
-
     // Update is called once per frame
     void Update()
     {
@@ -27,7 +27,10 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        inputFromAxes = IsThereAxesInput();
+        vertical = Input.GetAxisRaw("Vertical");
+        horizontal = Input.GetAxisRaw("Horizontal");
+        
+        inputFromAxes = CheckForAxesInput();
         
         if (!inputFromAxes)
         {
@@ -43,9 +46,6 @@ public class PlayerMovement : MonoBehaviour
             latestInputHorizontal = true;
         }
 
-        vertical = Input.GetAxisRaw("Vertical");
-        horizontal = Input.GetAxisRaw("Horizontal");
-        
         switch (latestInputHorizontal)
         {
             case false:
@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool IsThereAxesInput()
+    private bool CheckForAxesInput()
     {
         if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0)
         {
@@ -96,7 +96,5 @@ public class PlayerMovement : MonoBehaviour
         
         return true;
     }
-    
-    
     
 }
