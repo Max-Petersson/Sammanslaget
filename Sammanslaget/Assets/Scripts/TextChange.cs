@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TextChange : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class TextChange : MonoBehaviour
     private void Start()
     {
         tmPro = GetComponent<TextMeshProUGUI>();
+        ResetText();
     }
     private void OnEnable()
     {
@@ -18,24 +21,35 @@ public class TextChange : MonoBehaviour
     {
         PickUp.Message -= ExpressChange;
     }
+
     void ExpressChange(PickUp.WhatAmI state, GameObject targetedText) //problem, everyone will try this, could encapsulate by sending which question this i asked by
     {
         if (targetedText != this.gameObject)
             return;
 
-        if(state == PickUp.WhatAmI.bold)
+        switch (state)
         {
-            ResetText();
-            tmPro.fontStyle = FontStyles.Bold;
+            case PickUp.WhatAmI.header:
+                ResetText();
+                tmPro.fontSize = 32;
+                break;
+            
+            case PickUp.WhatAmI.bold: 
+                ResetText(); 
+                tmPro.fontStyle = FontStyles.Bold;
+                break;
+            
+            case PickUp.WhatAmI.red:
+                ResetText();
+                tmPro.color = Color.red;
+                break;
         }
-        else if(state == PickUp.WhatAmI.red)
-        {
-            ResetText();
-            tmPro.color = Color.red;
-        }
+        
     }
-    void ResetText()
+    
+    public void ResetText()
     {
+        tmPro.fontSize = 18;
         tmPro.fontStyle = FontStyles.Normal;
         tmPro.color = Color.black;
     }
