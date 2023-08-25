@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,11 @@ public class QuestionSlot : MonoBehaviour, IInteractable
     [SerializeField] GameObject codeBlock;
     [SerializeField] GameObject targetedText;
 
+    private GameObject none;
+
     public enum RightAnswer {Bold, Red }
     [SerializeField] private RightAnswer facit;
+    
 
     public void Interact(PlayerMovement player)
     {
@@ -33,6 +37,13 @@ public class QuestionSlot : MonoBehaviour, IInteractable
         {
             codeBlock.GetComponent<IInteractable>().Interact(player);
             codeBlock.GetComponent<BoxCollider2D>().enabled = true;
+
+            if (targetedText == null)
+            {
+                codeBlock = null;
+                return;
+            }
+            
             targetedText.GetComponent<TextChange>().ResetText();
             CheckForRightAnswer(true);
             codeBlock = null;

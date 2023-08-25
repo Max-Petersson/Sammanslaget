@@ -69,12 +69,7 @@ public class PlayerMovement : MonoBehaviour
         {
             interactableObject.Interact(this);
         }
-        else if (Input.GetButtonDown("Jump") && pickUp != null)
-        {
-            pickUp.gameObject.transform.parent = null;
-            pickUp = null;
-            state = PlayerMovement.InteractionState.notInteracting;
-        }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
